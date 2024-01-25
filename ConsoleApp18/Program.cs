@@ -37,7 +37,8 @@ namespace ConsoleApp18
                 students[i] = new Students(fullName, gender, birthYear); 
             } 
             
-            int boysCount = 0; int girlsCount = 0;
+            int boysCount = Students.CountBoys(students);
+            int girlsCount = Students.CountGirls(students);
             /// <summary>
             /// Подсчет количества мальчиков и девочек 
             /// </summary> 
