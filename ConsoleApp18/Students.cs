@@ -26,5 +26,31 @@ namespace ConsoleApp18
 
             BirthYear = birthYear;
         }
+        
+        public static int CountBoys(Student[] students)
+    {
+        int count = 0;
+        foreach (Student kid in students)
+        {
+            if (kid.Gender == 'Мужчина')
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static int CountGirls(Student[] students)
+    {
+        int count = 0;
+        foreach (Student kid in students)
+        {
+            if (kid.Gender == 'Женщина')
+            {
+                count++;
+            }
+        }
+        return count;
+    }
     }
 }
